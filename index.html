@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Valentine ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-weight: 500;
+    }
+
+    button {
+      padding: 14px 28px;
+      font-size: 15px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    #yes {
+      background-color: #e63946;
+      color: white;
+    }
+
+    #no {
+      background-color: white;
+      color: black;
+    }
+
+    input {
+      padding: 10px;
+      font-size: 15px;
+      border-radius: 8px;
+      border: none;
+      margin-top: 20px;
+    }
+
+    img {
+      width: 320px;
+      border-radius: 18px;
+      margin-top: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    #page1 img {
+      width: 260px;
+    }
+
+    #page4 img {
+      width: 380px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .page {
+      padding: 100px 20px;
+      min-height: 100vh;
+    }
+
+    .message {
+      max-width: 800px;
+      margin: 40px auto;
+      font-size: 17px;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .ending {
+      text-align: center;
+      font-style: italic;
+      margin-top: 40px;
+      font-size: 18px;
+    }
+
+    .signature {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page">
+  <h1>Will You Be My Valentine? ❤️🤭</h1>
+
+  <img src="IMG_8073.JPG" alt="Valentine Photo">
+
+  <br>
+
+  <button id="yes" onclick="showPage2()">YES 💖</button>
+  <button id="no" onmouseover="moveButton()">NO 🤨</button>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page hidden">
+  <h1>Can you remind Sarvesh when we started talking? 🤔💭</h1>
+  <input type="date" id="dateInput">
+  <br>
+  <button onclick="showPage3()">Submit 💌</button>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page hidden">
+
+  <h1>Happy Valentine’s Day, Simrika ❤️</h1>
+
+  <img src="simrika.PNG" alt="Our Photo">
+
+  <div class="message">
+
+I want to say your name because it already means something special to me. Simrika. It feels warm. It feels safe.
+
+<br><br>
+
+I know you don’t always see yourself the way I see you. I know someone once made you feel like you were too much, like you were a burden. I need you to hear this clearly from me. You are not heavy. Your feelings are not too much. Your heart is not something that needs to be smaller to be loved.
+
+<br><br>
+
+You’ve carried so much in your life. Losing your little sister. Pushing your grief down because you felt like you had to be strong. Fighting cancer at fourteen when other kids were just worrying about school and friends. Surviving hospitals, pain, losing your hair, feeling left behind while the world kept moving. That’s not weakness. That’s strength most people will never understand. And somehow, after all of that, you’re still soft. You still blush. You still get shy on voice messages. You still let your heart race when you like someone. That’s beautiful to me.
+
+<br><br>
+
+I love the little things about you. The way your heart jumps when we talk. The way you act like my corny messages annoy you but secretly love them. The way you feel loved when I make you playlists or edit your pictures. The way you smile when I smile at you. The way you miss me at school. The way you say you don’t want to stop talking to me.
+
+<br><br>
+
+I love that you want to trust me, even though you’re scared. That tells me you’re brave. I love that you worry about hurting me. That just shows how deeply you care. I love that you dream about med school even when you think the dream might be too big. It’s not too big for you. You survived something that tried to take your life. Med school should be scared of you.
+
+<br><br>
+
+I don’t want to rush you. I don’t want to pressure you. I don’t want you to ever feel like you have to perform or open up before you’re ready. I just want to be steady. Consistent. Someone who doesn’t disappear when things get heavy.
+
+<br><br>
+
+You said once that if we ever met, you wouldn’t be able to go back. I feel that too. Not in a scary way. In a real way. In a this matters way.
+
+<br><br>
+
+So I’m not asking you in some big dramatic way. I’m asking you gently.
+
+<br><br>
+
+<strong>Will you be my Valentine? 🤍</strong>
+
+<br><br>
+
+Not because I want something from you.  
+But because I choose you.  
+Your strength. Your softness. Your grief. Your dreams. Your laugh. Your shyness. Your overthinking. Your hope.
+
+<br><br>
+
+You don’t have to be perfect. You don’t have to be fearless. You don’t have to have everything figured out.
+
+<br><br>
+
+Just be you.
+
+<br><br>
+
+And I’ll be here. Patient. Honest. Steady. Smiling at you in the morning like I always do.
+
+  </div>
+
+  <div class="ending">
+    Happy Valentine’s Day, Simrika. I hope this is the first of many. ❤️
+  </div>
+
+  <div class="signature">
+    — Sarvesh
+  </div>
+
+  <button onclick="showPage4()" style="margin-top:30px;">
+    Next →
+  </button>
+
+</div>
+
+<!-- PAGE 4 -->
+<div id="page4" class="page hidden">
+
+  <h1>One More Thing… 🤍</h1>
+
+  <div class="message">
+
+I know we live very far and I wish I could give you hugs and kisses on February 14th.
+
+<br><br>
+
+I do have something for you though. It’s not physical, but I hope it makes you smile.
+
+<br><br>
+
+You’ll have to wait until February 14th. 🎁
+
+<br><br>
+
+And on Valentine’s Day, I can’t wait to watch the Netflix Live X BTS concert with you. 🎬💜
+
+<br><br>
+
+Even if we’re far, we’re still choosing each other. I love you, Simrika. Always have, always will. ❤️
+
+<br><br>
+
+Or just talk to you on the phone THE WHOLE DAY 😊
+
+  </div>
+
+  <br><br>
+
+  <img src="Thank you.JPG" alt="Thank You">
+
+  <br><br>
+
+  <h2>Thank you for being you. I love you. ❤️</h2>
+
+</div>
+
+<script>
+function moveButton() {
+  const button = document.getElementById('no');
+  button.style.position = 'absolute';
+  button.style.top = Math.random() * window.innerHeight + 'px';
+  button.style.left = Math.random() * window.innerWidth + 'px';
+}
+
+function showPage2() {
+  document.getElementById('page1').classList.add('hidden');
+  document.getElementById('page2').classList.remove('hidden');
+}
+
+function showPage3() {
+  const date = document.getElementById('dateInput').value;
+  if(date === "") {
+    alert("You forgot the date 🤨");
+  } else {
+    document.getElementById('page2').classList.add('hidden');
+    document.getElementById('page3').classList.remove('hidden');
+  }
+}
+
+function showPage4() {
+  document.getElementById('page3').classList.add('hidden');
+  document.getElementById('page4').classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
